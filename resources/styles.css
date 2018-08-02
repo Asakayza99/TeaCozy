@@ -1,12 +1,14 @@
 body{
-    display: flex;
     background-color: black;
     color: seashell;
     opacity: 0.9;
     font-family: helvetica;
     font-size: 22px;
-    margin: auto;
-    justify-content: center;
+}
+
+.col img {
+   width: 300px;
+   height: 200px;
 }
 
 
@@ -20,6 +22,7 @@ header{
   position: fixed;
   z-index: 1;
   width: 100%;
+  background-color: black;
 }
 
 header img{
@@ -41,18 +44,18 @@ header span{
 }
 
 /* main picture */
-main{
-  top: 69px;
-  position:relative;
-  display: flex;
+.jumbotron {
+  position: relative;
   width: 1200px;
   height: 700px;
   background-image: url(./images/img-mission-background.jpg);
-  justify-content: center;
   align-items: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-main div {
+.picture{
   display:flex;
   align-items: center;
   background-color: black;
@@ -61,8 +64,101 @@ main div {
   margin: auto;
 }
 
-main h2,h4{
-  display: flex;
+main h2,h3,h4{
   margin: 10px;
+  display: flex;
+}
 
+/* Tea of The Month */
+section{
+  align-items: center;
+}
+
+.teaofthemonth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px;
+}
+
+.text{
+  display:inline-block;
+  justify-content: center;
+  margin: 10px;
+}
+
+.text h2,h4 {
+    display:flex;
+    justify-content: center;
+}
+
+.col{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.images1,.images2{
+  display: flex;
+}
+
+/* Locations */
+.location {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  height: 600px;
+  background-image: url("images/img-locations-background.jpg");
+  justify-content: center;
+
+}
+
+.location h2{
+  display: flex;
+  justify-content: center;
+}
+
+.locationbox{
+  display: flex;
+  justify-content: center;
+}
+
+.address{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 300px;
+  justify-content: center;
+  margin:20px;
+}
+
+.address h3,h4{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+/* Contact */
+.contact{
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 100%;
+}
+
+.contact h2,h5{
+  display:flex;
+  justify-content: center;
+}
+
+footer {
+  margin:20px;
+  text-align: left;
 }
